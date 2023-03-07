@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import LogoTitle from "../../assets/images/logo-s.png";
 
 import AnimatedLetters from "../AnimatedLetters";
+import Logo from "./Logo";
 
 import "./index.scss";
 
@@ -25,6 +26,7 @@ const Home = () => {
     "p",
     "e",
     "r",
+    ".",
   ];
 
   useEffect(() => {
@@ -61,6 +63,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <Logo />
     </div>
   );
 };

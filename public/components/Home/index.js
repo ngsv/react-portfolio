@@ -24,6 +24,7 @@ const Home = () => {
         "p",
         "e",
         "r",
+        ".",
     ];
     useEffect(() => {
         const timer = setTimeout(() => {

@@ -8,11 +8,11 @@ const Logo = () => {
     const bgRef = useRef(null);
     const outlineLogoRef = useRef(null);
     const solidLogoRef = useRef(null);
+    const tl = useRef(gsap.timeline());
     useEffect(() => {
         gsap.registerPlugin(DrawSVGPlugin);
         // Call the animations in a sequence
-        gsap
-            .timeline()
+        tl.current
             .to(bgRef.current, {
             duration: 1,
             opacity: 1,
@@ -21,6 +21,7 @@ const Logo = () => {
             drawSVG: 0,
             duration: 20,
         });
+        // Fade in the solid logo when the drawing animation is done
         gsap.fromTo(solidLogoRef.current, {
             opacity: 0,
         }, {

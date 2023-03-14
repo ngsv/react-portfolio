@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import Loader from 'react-loaders';
 import emailjs from '@emailjs/browser';
+import { MapContainer, TileLayer, Popup, Circle, Tooltip } from 'react-leaflet';
 
 import AnimatedLetters from '../AnimatedLetters';
 
@@ -94,6 +95,30 @@ const Contact = () => {
               </ul>
             </form>
           </div>
+        </div>
+        <div className="info-map">
+          Steven Ngov,
+          <br />
+          Canada,
+          <br />
+          North York
+          <br />
+          <span>gl.steven.ngov@gmail.com</span>
+        </div>
+        <div className="map-wrap">
+          <MapContainer
+            center={[43.744276156528365, -79.484063840846]}
+            zoom={11}
+          >
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            <Circle
+              className="circle"
+              center={[43.744276156528365, -79.484063840846]}
+              radius={2000}
+            >
+              <Tooltip className="tooltip">Steven lives here!</Tooltip>
+            </Circle>
+          </MapContainer>
         </div>
       </div>
       <Loader type="ball-scale-ripple-multiple" active />

@@ -1,5 +1,7 @@
+@import '../../global_val';
+
 .nav-bar {
-  background: #181818;
+  background: $navbar-background;
   width: 60px;
   height: 100%;
   position: absolute;
@@ -34,7 +36,7 @@
 
     a {
       font-size: 22px;
-      color: #4d4d4e;
+      color: $navbar-icons;
       display: block;
       line-height: 51px;
       height: 51px;
@@ -46,7 +48,7 @@
       }
 
       &:hover {
-        color: #ffd700;
+        color: $primary-color;
 
         svg {
           opacity: 0;
@@ -58,7 +60,7 @@
       }
 
       &:after {
-        content: "";
+        content: '';
         font-size: 9px;
         letter-spacing: 2px;
         position: absolute;
@@ -72,26 +74,26 @@
 
       &:first-child {
         &::after {
-          content: "HOME";
+          content: 'HOME';
         }
       }
     }
 
     a.about-link {
       &:after {
-        content: "ABOUT";
+        content: 'ABOUT';
       }
     }
 
     a.contact-link {
       &:after {
-        content: "CONTACT";
+        content: 'CONTACT';
       }
     }
 
     a.active {
       svg {
-        color: #ffd700;
+        color: $primary-color;
       }
     }
   }
@@ -114,7 +116,7 @@
         line-height: 16px;
 
         &:hover svg {
-          color: #ffd700;
+          color: $primary-color;
         }
       }
     }

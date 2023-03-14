@@ -12,31 +12,31 @@
     color: #fff;
     font-size: 53px;
     margin: 0;
-    font-family: "Coolvetica";
+    font-family: 'Coolvetica';
     font-weight: 400;
 
-    // opening h1 tag around title
+    // Opening h1 tag around title
     &::before {
-      content: "<h1>";
-      font-family: "La Belle Aurore";
+      content: '<h1>';
+      font-family: 'La Belle Aurore';
       font-size: 18px;
       color: #ffd700;
       opacity: 0.6;
       position: absolute;
       margin-top: -40px;
-      left: 15px;
+      left: -10px;
     }
 
-    // closing h1 tag around title
+    // Closing h1 tag around title
     &::after {
-      content: "</h1>";
-      font-family: "La Belle Aurore";
+      content: '</h1>';
+      font-family: 'La Belle Aurore';
       font-size: 18px;
       color: #ffd700;
       opacity: 0.6;
       position: absolute;
-      margin-top: 18px;
-      margin-left: 20px;
+      margin-top: 32px;
+      margin-left: 35px;
       animation: fadeIn 1s 1.7s backwards;
     }
 
@@ -60,6 +60,7 @@
     animation: fadeIn 1s 1.8s backwards;
   }
 
+  // Contact me button
   .flat-button {
     color: #ffd700;
     font-size: 13px;

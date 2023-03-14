@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import Loader from 'react-loaders';
 import emailjs from '@emailjs/browser';
-import { MapContainer, TileLayer, Popup, Circle, Tooltip } from 'react-leaflet';
+import { MapContainer, TileLayer, Circle, Tooltip } from 'react-leaflet';
 
 import AnimatedLetters from '../AnimatedLetters';
 

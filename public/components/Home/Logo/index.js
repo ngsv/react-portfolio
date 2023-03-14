@@ -1,9 +1,9 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { useRef, useEffect } from "react";
-import gsap from "gsap-trial";
-import DrawSVGPlugin from "gsap-trial/DrawSVGPlugin";
-import LogoS from "../../../assets/images/logo-s.png";
-import "./index.scss";
+import { useRef, useEffect } from 'react';
+import gsap from 'gsap-trial';
+import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin';
+import LogoS from '../../../assets/images/logo-s.png';
+import './index.scss';
 const Logo = () => {
     const bgRef = useRef(null);
     const outlineLogoRef = useRef(null);

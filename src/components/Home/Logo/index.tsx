@@ -1,10 +1,10 @@
-import { useRef, useEffect } from "react";
-import gsap from "gsap-trial";
-import DrawSVGPlugin from "gsap-trial/DrawSVGPlugin";
+import { useRef, useEffect } from 'react';
+import gsap from 'gsap-trial';
+import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin';
 
-import LogoS from "../../../assets/images/logo-s.png";
+import LogoS from '../../../assets/images/logo-s.png';
 
-import "./index.scss";
+import './index.scss';
 
 const Logo = () => {
   const bgRef = useRef<HTMLDivElement>(null);

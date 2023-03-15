@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faHtml5,
-  faCss3,
+  faCss3Alt,
   faJsSquare,
   faReact,
   faGitAlt,
@@ -80,7 +80,7 @@ const About = () => {
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
             </div>
             <div className="face3 face--right">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+              <FontAwesomeIcon icon={faCss3Alt} color="#28A4D9" />
             </div>
             <div className="face4 face--left">
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />

@@ -2,7 +2,30 @@
 
 .contact-form {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 7rem;
+  margin-bottom: 4.5rem;
+
+  &::before {
+    content: '<form>';
+    font-family: $tags-font;
+    font-size: 1.8rem;
+    color: $primary-color;
+    opacity: 0.6;
+    position: absolute;
+    left: -2rem;
+    margin-top: -3.5rem;
+  }
+
+  &::after {
+    content: '</form>';
+    font-family: $tags-font;
+    font-size: 1.8rem;
+    color: $primary-color;
+    opacity: 0.6;
+    position: absolute;
+    left: -2rem;
+    margin-top: 0.8rem;
+  }
 
   ul {
     padding: 0;

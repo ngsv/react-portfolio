@@ -67,9 +67,8 @@ h1 {
       color: $primary-color;
       font-weight: 400;
       margin-top: 0;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
       position: relative;
-      left: 1rem;
 
       &::before {
         content: '<h1>';
@@ -87,7 +86,7 @@ h1 {
         font-size: 1.8rem;
         position: absolute;
         left: -2rem;
-        bottom: -1rem;
+        bottom: -0.6rem;
         opacity: 0.6;
       }
     }
@@ -115,8 +114,6 @@ h1 {
     }
 
     .paragraph-div {
-      margin-left: 1rem;
-
       &::before {
         content: '<p>';
         font-family: $tags-font;
@@ -124,8 +121,8 @@ h1 {
         color: $primary-color;
         opacity: 0.6;
         position: absolute;
-        left: -1rem;
-        top: 15rem;
+        left: -2rem;
+        margin-top: -2.5rem;
       }
 
       &::after {
@@ -135,8 +132,8 @@ h1 {
         color: $primary-color;
         opacity: 0.6;
         position: absolute;
-        left: -1rem;
-        bottom: -2rem;
+        left: -2rem;
+        margin-top: -0.8rem;
       }
     }
   }

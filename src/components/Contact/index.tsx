@@ -53,18 +53,9 @@ const Contact = () => {
           </h1>
           <div className="paragraph-div">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in
-              varius metus. Sed in auctor mi. Duis ut leo fringilla, ultricies
-              felis eget, sollicitudin turpis. Praesent nibh ex, iaculis quis
-              quam quis, malesuada dapibus velit. Nullam condimentum magna non
-              risus porttitor sodales. Proin tempor, enim pretium pulvinar
-              pretium, enim sapien vulputate purus, et ultrices eros lectus eget
-              lorem. Vivamus varius sem justo, et elementum tortor venenatis id.
-              In consequat purus eu metus molestie, vitae dictum quam viverra.
-              Aenean eu accumsan enim. Sed vestibulum nisi eget metus venenatis,
-              nec tristique nisl tempus. Sed a elementum lacus. In a maximus
-              augue, non pharetra diam. Suspendisse leo lorem, ultricies vitae
-              nisl et, condimentum posuere velit.
+              I'm open to career opportunities - send me a message using the
+              form below, and feel free to leave your LinkedIn so we can keep in
+              touch.
             </p>
           </div>
           <div className="contact-form">

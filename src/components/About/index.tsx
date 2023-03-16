@@ -53,39 +53,21 @@ const About = () => {
           </h1>
           <div className="paragraph-div">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque consequat sapien in lacus gravida ullamcorper.
-              Integer condimentum eget erat et feugiat. Maecenas vitae laoreet
-              ipsum. Phasellus pellentesque felis et nibh fringilla euismod.
-              Quisque auctor dapibus porta. Aliquam eget rutrum magna. Proin
-              placerat nec quam a molestie. Donec sed nulla eget dolor eleifend
-              rutrum ut a lectus. Vestibulum ante ipsum primis in faucibus orci
-              luctus et ultrices posuere cubilia curae; Curabitur pulvinar
-              rutrum pulvinar. Praesent semper, felis lobortis sagittis maximus,
-              diam purus ultrices metus, vitae ullamcorper leo leo sit amet
-              tortor. Donec varius, nunc ut efficitur suscipit, lectus tortor
-              malesuada orci, et suscipit augue nibh et lacus. Praesent blandit
-              massa quis ipsum laoreet sagittis.
+              Hello! I'm Steven, a mechanical engineer alumni from Toronto
+              Metropolitan University. Before discovering my passion for
+              programming, I worked in the manufacturing industry as an
+              Engineering Associate. I decided to focalize my time and energy on
+              programming, and thus, my self-learning journey began.
             </p>
             <p>
-              Etiam in diam nec augue auctor posuere et non ligula. Maecenas
-              eleifend ex sed erat venenatis, ac viverra ligula laoreet. Nunc
-              lobortis elit nec egestas venenatis. Morbi consequat justo vitae
-              facilisis bibendum. Quisque ipsum mi, scelerisque non nunc eget,
-              venenatis imperdiet tellus. Fusce viverra turpis eget rhoncus
-              blandit. Donec volutpat sapien eu dolor vehicula, a tempus quam
-              aliquet.
+              What I love about programming is the fast-paced environment and
+              the continuous learning process. Currently, I'm working on
+              upgrading my skills in React and TypeScript.
             </p>
             <p>
-              Integer mattis ante nisi, vel aliquet erat convallis et. Cras in
-              fermentum massa, ac mollis quam. Donec elementum diam a quam
-              hendrerit volutpat. Suspendisse pretium leo nunc, et luctus metus
-              dapibus sit amet. Vestibulum luctus velit commodo dolor lacinia
-              tempus. Aliquam at odio porttitor erat commodo blandit quis et
-              neque. Suspendisse vehicula arcu dolor, eu venenatis urna pharetra
-              non. Aliquam ut aliquam massa. Etiam fermentum, augue eget
-              elementum sagittis, ipsum mauris hendrerit ipsum, nec ullamcorper
-              est diam sed metus. Vivamus tincidunt eu justo sit amet congue.
+              Outside of programming, I love the outdoors. Some of my hobbies
+              include hiking, cycling, rock climbing, and snowboarding during
+              the colder months.
             </p>
           </div>
         </div>

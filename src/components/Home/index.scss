@@ -12,7 +12,8 @@
 
   h1 {
     color: #fff;
-    font-size: 53px;
+    font-size: 10rem;
+    line-height: 10rem;
     margin: 0;
     font-family: $heading-font;
     font-weight: 400;
@@ -21,32 +22,32 @@
     &::before {
       content: '<h1>';
       font-family: $tags-font;
-      font-size: 18px;
+      font-size: 1.8rem;
       color: $primary-color;
       opacity: 0.6;
       position: absolute;
-      margin-top: -20px;
-      left: -10px;
+      margin-top: -5.5rem;
+      left: -2rem;
     }
 
     // Closing h1 tag around title
     &::after {
       content: '</h1>';
       font-family: $tags-font;
-      font-size: 18px;
+      font-size: 1.8rem;
       color: $primary-color;
       opacity: 0.6;
       position: absolute;
-      margin-top: 38px;
-      margin-left: 20px;
+      margin-top: 3rem;
+      margin-left: 2rem;
       animation: fadeIn 1s 1.7s backwards;
     }
 
     // 'S' Logo in heading (Steven)
     img {
-      width: 32px;
+      width: 4.6rem;
       height: auto;
-      margin-left: 20px;
+      margin-left: 2rem;
       opacity: 0; // Rotation animation, so initally set to 0
       animation: rotateIn 1s linear both;
       animation-delay: 1.4s;
@@ -55,25 +56,51 @@
 
   h2 {
     color: #8d8d8d;
-    margin-top: 20px;
+    margin-top: 4rem;
+    margin-bottom: 50px;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 1.6rem;
     font-family: sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 0.3rem;
     animation: fadeIn 1s 1.8s backwards;
+
+    &::before {
+      content: '<p>';
+      font-family: $tags-font;
+      font-size: 1.8rem;
+      letter-spacing: normal;
+      color: $primary-color;
+      opacity: 0.6;
+      position: absolute;
+      margin-top: -3rem;
+      left: -2rem;
+    }
+
+    &::after {
+      content: '</p>';
+      font-family: $tags-font;
+      font-size: 1.8rem;
+      letter-spacing: normal;
+      color: $primary-color;
+      opacity: 0.6;
+      position: absolute;
+      margin-top: 3rem;
+      margin-left: 1rem;
+      left: -3rem;
+    }
   }
 
   // Contact me button
   .flat-button {
     color: $primary-color;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 400;
-    letter-spacing: 4px;
+    letter-spacing: 0.4rem;
     font-family: sans-serif;
     text-decoration: none;
-    padding: 10px 18px;
+    padding: 1.2rem 2rem;
     border: 1px solid $primary-color;
-    margin-top: 25px;
+    margin-top: 2.5rem;
     float: left;
     animation: fadeIn 1s 1.8s backwards;
 

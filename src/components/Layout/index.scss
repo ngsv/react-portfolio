@@ -8,7 +8,7 @@
 
 .top-tags {
   bottom: auto;
-  top: 35px;
+  top: 3.5rem;
 }
 
 .tags {
@@ -16,13 +16,13 @@
   opacity: 0.6;
   position: absolute;
   bottom: 0;
-  left: 120px;
-  font-size: 18px;
+  left: 12rem;
+  font-size: 1.8rem;
   font-family: $tags-font;
 }
 
 .bottom-tags {
-  bottom: 35px;
+  bottom: 3.5rem;
 }
 
 .container {
@@ -53,41 +53,38 @@
     max-height: 90%;
 
     h1 {
-      font-size: 53px;
+      font-size: 10rem;
       font-family: $heading-font;
       color: $primary-color;
       font-weight: 400;
       margin-top: 0;
-      margin-bottom: 40px;
+      margin-bottom: 4rem;
       position: relative;
-      left: 10px;
+      left: 1rem;
 
       &::before {
         content: '<h1>';
         font-family: $tags-font;
-        font-size: 18px;
+        font-size: 1.8rem;
         position: absolute;
-        margin-top: -10px;
-        left: -10px;
+        top: 0.8rem;
+        left: -2rem;
         opacity: 0.6;
-        line-height: 18px;
       }
 
       &::after {
         content: '</h1>';
         font-family: $tags-font;
-        font-size: 18px;
-        line-height: 18px;
+        font-size: 1.8rem;
         position: absolute;
-        left: -30px;
-        bottom: -20px;
-        margin-left: 20px;
+        left: -2rem;
+        bottom: -1rem;
         opacity: 0.6;
       }
     }
 
     p {
-      font-size: 13px;
+      font-size: 1.5rem;
       color: $text-color;
       font-family: sans-serif;
       font-weight: 300;
@@ -105,6 +102,32 @@
 
       &:nth-of-type(3) {
         animation-delay: 1.3s;
+      }
+    }
+
+    .paragraph-texts {
+      margin-left: 1rem;
+
+      &::before {
+        content: '<p>';
+        font-family: $tags-font;
+        font-size: 1.8rem;
+        color: $primary-color;
+        opacity: 0.6;
+        position: absolute;
+        left: -1rem;
+        top: 15rem;
+      }
+
+      &::after {
+        content: '</p>';
+        font-family: $tags-font;
+        font-size: 1.8rem;
+        color: $primary-color;
+        opacity: 0.6;
+        position: absolute;
+        left: -1rem;
+        bottom: -2rem;
       }
     }
   }

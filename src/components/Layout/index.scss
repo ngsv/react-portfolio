@@ -1,5 +1,14 @@
 @import '../../global_val';
 
+h1 {
+  .__23,
+  .__30,
+  .__32,
+  .__41 {
+    width: 2.5rem;
+  }
+}
+
 .page {
   width: 100%;
   height: 100%;
@@ -105,7 +114,7 @@
       }
     }
 
-    .paragraph-texts {
+    .paragraph-div {
       margin-left: 1rem;
 
       &::before {

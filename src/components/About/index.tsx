@@ -31,7 +31,6 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              // strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
               strArray={[
                 'M',
                 'e',
@@ -49,9 +48,10 @@ const About = () => {
                 'I',
               ]}
               idx={15}
+              cIdx={20}
             />
           </h1>
-          <div className="paragraph-texts">
+          <div className="paragraph-div">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Pellentesque consequat sapien in lacus gravida ullamcorper.

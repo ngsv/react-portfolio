@@ -18,6 +18,11 @@
     font-family: $heading-font;
     font-weight: 400;
 
+    // Space width (web developer)
+    .__9 {
+      width: 2.5rem;
+    }
+
     // Opening h1 tag around title
     &::before {
       content: '<h1>';
@@ -47,7 +52,7 @@
     img {
       width: 4.6rem;
       height: auto;
-      margin-left: 2rem;
+      margin-left: 2.5rem;
       opacity: 0; // Rotation animation, so initally set to 0
       animation: rotateIn 1s linear both;
       animation-delay: 1.4s;

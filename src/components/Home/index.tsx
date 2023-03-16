@@ -52,12 +52,14 @@ const Home = () => {
               letterClass={letterClass}
               strArray={nameArray}
               idx={15}
+              cIdx={1}
             />
             <br />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
               idx={20}
+              cIdx={6}
             />
           </h1>
           <h2>Web Developer</h2>

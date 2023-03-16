@@ -1,9 +1,10 @@
-import "./index.scss";
+import './index.scss';
 
 interface AnimatedLettersProps {
   letterClass: string;
   strArray: string[];
   idx: number;
+  cIdx: number;
 }
 
 /**
@@ -12,12 +13,15 @@ interface AnimatedLettersProps {
  * @param idx - The index (the starting point for setting the delay of our letters in the naimation)
  */
 const AnimatedLetters = (props: AnimatedLettersProps) => {
-  const { letterClass, strArray, idx } = props;
+  const { letterClass, strArray, idx, cIdx } = props;
 
   return (
     <span>
       {strArray.map((char, i) => (
-        <span key={char + i} className={`${letterClass} _${i + idx}`}>
+        <span
+          key={char + i}
+          className={`${letterClass} _${i + idx} __${i + cIdx}`}
+        >
           {char}
         </span>
       ))}

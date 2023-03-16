@@ -2,21 +2,28 @@
 
 .logo-container {
   z-index: 0;
-  width: 400px;
-  height: 609px;
+  width: 500px;
+  height: 809px;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 15%;
   left: auto;
   margin: auto;
-  opacity: 0;
 
   svg {
     width: 100%;
     height: auto;
     bottom: 0;
     transform: rotateZ(30deg) !important;
+
+    .svg-logo {
+      stroke-dasharray: 35000;
+      stroke-dashoffset: 0;
+      animation: dash 4.5s linear;
+      animation-delay: 1s;
+      animation-fill-mode: both;
+    }
   }
 
   .solid-logo {
@@ -30,10 +37,21 @@
     opacity: 0;
     transform: rotateZ(30deg);
     z-index: 1;
+    animation: fadeIn 4s 4s;
+    animation-fill-mode: forwards;
   }
 }
 
 .svg-container {
   stroke: $primary-color;
-  stroke-width: 10px;
+  stroke-width: 10;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 35000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }

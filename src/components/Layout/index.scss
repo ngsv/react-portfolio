@@ -1,5 +1,13 @@
 @import '../../global_val';
 
+// Disable text selection/highlighting of elements
+* {
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+}
+
+// Space character width in headings
 h1 {
   .__23,
   .__30,

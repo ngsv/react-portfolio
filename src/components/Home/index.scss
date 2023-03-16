@@ -56,6 +56,7 @@
       opacity: 0; // Rotation animation, so initally set to 0
       animation: rotateIn 1s linear both;
       animation-delay: 1.4s;
+      pointer-events: none;
     }
   }
 

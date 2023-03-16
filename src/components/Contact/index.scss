@@ -3,7 +3,7 @@
 .contact-form {
   width: 100%;
   margin-top: 7rem;
-  margin-bottom: 4.5rem;
+  margin-bottom: 7rem;
 
   &::before {
     content: '<form>';
@@ -24,7 +24,7 @@
     opacity: 0.6;
     position: absolute;
     left: -2rem;
-    margin-top: 0.8rem;
+    margin-top: 3.2rem;
   }
 
   ul {
@@ -36,7 +36,7 @@
       margin: 0;
       margin-bottom: 10px;
       list-style: none;
-      overflow: hidden;
+      // overflow: hidden;
       display: block;
       position: relative;
       opacity: 0;
@@ -64,13 +64,19 @@
     border: 0;
     background: #115173;
     color: #fff;
-    height: 50px;
-    font-size: 16px;
-    padding: 0 20px;
+    height: 5rem;
+    font-size: 1.6rem;
+    padding: 0 2rem;
     box-sizing: border-box;
 
     &::placeholder {
       font-weight: 600;
+    }
+
+    &:focus {
+      outline: solid 0.2rem black;
+      border-radius: 0.2rem;
+      border: none;
     }
   }
 
@@ -79,14 +85,21 @@
     border: 0;
     background: #115173;
     color: #fff;
-    height: 50px;
-    min-height: 150px;
+    height: 5rem;
+    min-height: 25rem;
     font-size: 16px;
     padding: 20px;
     box-sizing: border-box;
+    resize: vertical;
 
     &::placeholder {
       font-weight: 600;
+    }
+
+    &:focus {
+      outline: solid 0.2rem black;
+      border-radius: 0.2rem;
+      border: none;
     }
   }
 

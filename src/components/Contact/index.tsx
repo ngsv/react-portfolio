@@ -84,7 +84,11 @@ const Contact = () => {
                   <textarea name="message" placeholder="Message" required />
                 </li>
                 <li>
-                  <input className="flat-button" type="submit" value="SEND" />
+                  <input
+                    className="flat-button"
+                    type="submit"
+                    value="SEND MESSAGE"
+                  />
                 </li>
               </ul>
             </form>

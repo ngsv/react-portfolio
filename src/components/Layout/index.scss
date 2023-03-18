@@ -33,7 +33,6 @@ h1 {
   color: $primary-color;
   opacity: 0.6;
   position: absolute;
-  // bottom: 0;
   left: 12rem;
   font-size: 1.8rem;
   font-family: $tags-font;
@@ -46,12 +45,11 @@ h1 {
 
 .container {
   width: 100%;
-  height: 90%;
+  height: 100%;
   min-height: 566px;
   will-change: contents;
   position: absolute;
   opacity: 0; // Fade in animations, so needs to be 0 initially
-  top: 5%;
   margin: 0 auto;
   z-index: 1;
   transform-style: preserve-3d;

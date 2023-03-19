@@ -12,7 +12,7 @@ const Home = () => {
   // Letters can only have one animation at a time, one on initial load, and one on hover after initial load
   const [letterClass, setLetterClass] = useState('text-animate');
   // Strings we want to animate
-  const nameArray = ['t', 'e', 'v', 'e', 'n'];
+  const nameArray = ['t', 'e', 'v', 'e', 'n', ','];
   const jobArray = [
     'w',
     'e',
@@ -58,8 +58,8 @@ const Home = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
-              idx={20}
-              cIdx={6}
+              idx={21}
+              cIdx={7}
             />
           </h1>
           <h2>Web Developer</h2>

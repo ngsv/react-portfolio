@@ -48,7 +48,7 @@ const Contact = () => {
               letterClass={letterClass}
               strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
               idx={15}
-              cIdx={34}
+              cIdx={35}
             />
           </h1>
           <div className="paragraph-div">

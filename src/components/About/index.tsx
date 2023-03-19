@@ -48,7 +48,7 @@ const About = () => {
                 'I',
               ]}
               idx={15}
-              cIdx={20}
+              cIdx={21}
             />
           </h1>
           <div className="paragraph-div">

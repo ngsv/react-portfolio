@@ -1,8 +1,6 @@
 @import '../../global_val';
 
 .home-page {
-  // min-height: 700px;
-
   .text-zone {
     position: absolute;
     left: 17rem;
@@ -119,6 +117,7 @@
   }
 }
 
+// ------------------------ Media queries ------------------------
 @media only screen and (max-width: 1700px) {
   .home-page {
     h1 {
@@ -134,15 +133,31 @@
         width: 1.6rem;
       }
 
+      &::before {
+        margin-top: -4rem;
+      }
+
       &::after {
-        margin-top: 2.2rem;
-        margin-left: 2rem;
+        margin-top: 2rem;
+        margin-left: 1.6rem;
       }
     }
 
     h2 {
       font-size: 1.2rem;
+
+      &::before {
+        margin-top: -2.5rem;
+      }
+
+      &::after {
+        margin-top: 2rem;
+      }
     }
+  }
+
+  .page {
+    min-height: 800px;
   }
 }
 
@@ -151,6 +166,18 @@
     .text-zone {
       width: 58%;
     }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-page {
+    .text-zone {
+      top: 32%;
+    }
+  }
+
+  .page {
+    min-height: 850px;
   }
 }
 
@@ -172,18 +199,30 @@
         width: 1.2rem;
       }
 
+      &::before {
+        margin-top: -3rem;
+      }
+
       &::after {
-        margin-top: 1.2rem;
-        margin-left: 2rem;
+        margin-top: 1.3rem;
+        margin-left: 1.2rem;
       }
     }
 
     h2 {
       font-size: 1.1rem;
+
+      &::before {
+        margin-top: -2.25rem;
+      }
+
+      &::after {
+        margin-top: 1.75rem;
+      }
     }
   }
 
   .page {
-    min-height: 525px;
+    min-height: 800px;
   }
 }

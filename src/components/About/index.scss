@@ -177,3 +177,20 @@ $time-4: 200s;
     transform: translateY($spacing * -1);
   }
 }
+
+// ------------------------ Media queries ------------------------
+@media only screen and (max-width: 1550px) {
+  .about-page .text-zone {
+    h1 {
+      font-size: 6.5rem;
+
+      &::before {
+        top: -0rem;
+      }
+
+      &::after {
+        bottom: -1.4rem;
+      }
+    }
+  }
+}

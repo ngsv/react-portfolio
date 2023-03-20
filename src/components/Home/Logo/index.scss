@@ -2,13 +2,15 @@
 
 .logo-container {
   z-index: 0;
-  width: 500px;
-  height: 809px;
+  // width: 500px;
+  // height: 809px;
+  width: 25vw;
+  height: 45vw;
   position: absolute;
   top: 0;
   bottom: 0;
   left: auto;
-  right: 12%;
+  right: 10%;
   margin: auto;
   pointer-events: none;
 
@@ -57,16 +59,24 @@
   }
 }
 
-@media only screen and (max-width: 1700px) {
+// ------------------------ Media queries ------------------------
+@media only screen and (max-width: 1000px) {
   .logo-container {
-    width: 350px;
-    height: 559px;
+    top: 55%;
+    width: 200px;
+    height: 325px;
+    margin-top: 10px;
+    left: 200px;
+    right: 0;
+    margin: 0;
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
   .logo-container {
-    display: none;
-    // margin: 0;
+    top: 52%;
+    left: 150px;
+    right: 0;
+    margin: 0;
   }
 }

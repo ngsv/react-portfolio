@@ -154,3 +154,9 @@ h1 {
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .tags {
+    left: 9rem;
+  }
+}

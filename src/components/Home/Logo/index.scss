@@ -7,8 +7,8 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 15%;
   left: auto;
+  right: 12%;
   margin: auto;
   pointer-events: none;
 
@@ -54,5 +54,19 @@
   }
   to {
     stroke-dashoffset: 0;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .logo-container {
+    width: 350px;
+    height: 559px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .logo-container {
+    display: none;
+    // margin: 0;
   }
 }

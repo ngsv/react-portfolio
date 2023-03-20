@@ -1,9 +1,11 @@
 @import '../../global_val';
 
 .home-page {
+  // min-height: 700px;
+
   .text-zone {
     position: absolute;
-    left: 10%;
+    left: 17rem;
     top: 50%;
     transform: translateY(-50%);
     width: 40%; // 40-60 split with content on the right side
@@ -114,5 +116,74 @@
       background: $primary-color;
       color: #333;
     }
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .home-page {
+    h1 {
+      font-size: 6.5rem;
+      line-height: 6.5rem;
+
+      img {
+        width: 3rem;
+        margin-left: 1.6rem;
+      }
+
+      .__10 {
+        width: 1.6rem;
+      }
+
+      &::after {
+        margin-top: 2.2rem;
+        margin-left: 2rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .home-page {
+    .text-zone {
+      width: 58%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home-page {
+    .text-zone {
+      left: 14rem;
+    }
+    h1 {
+      font-size: 4rem;
+      line-height: 4rem;
+
+      img {
+        width: 2.2rem;
+        margin-left: 1.2rem;
+      }
+
+      .__10 {
+        width: 1.2rem;
+      }
+
+      &::after {
+        margin-top: 1.2rem;
+        margin-left: 2rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.1rem;
+    }
+  }
+
+  .page {
+    min-height: 525px;
   }
 }

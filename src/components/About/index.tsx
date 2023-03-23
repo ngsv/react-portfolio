@@ -72,8 +72,6 @@ const About = () => {
           </div>
         </div>
         <div className="stage-cube-cont">
-          {/* <div className="particle-bg"></div> */}
-
           <div className="animation-wrapper">
             <div className="particle particle-1"></div>
             <div className="particle particle-2"></div>

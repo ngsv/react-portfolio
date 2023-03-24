@@ -242,8 +242,18 @@ $time-4: 200s;
       }
     }
 
-    p {
-      font-size: 1.4rem;
+    .paragraph-div {
+      p {
+        font-size: 1.4rem;
+      }
+
+      &::before {
+        margin-top: -2rem;
+      }
+
+      &::after {
+        margin-top: -1.6rem;
+      }
     }
   }
 

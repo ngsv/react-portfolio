@@ -1,9 +1,5 @@
 @import '../../global_val';
 
-.page-contact {
-  min-height: 875px;
-}
-
 .contact-form {
   width: 100%;
   margin-top: 7rem;
@@ -129,30 +125,29 @@
 .info-map {
   position: absolute;
   background-color: #000;
-  top: 2%;
-  right: 3%;
+  top: 50px;
+  right: 30%;
   z-index: 999999;
   width: 267px;
-  padding: 2rem;
+  padding: 20px;
   color: #fff;
   font-family: $text-font;
-  font-size: 1.7rem;
+  font-size: 17px;
   font-weight: 300;
   opacity: 0;
   animation: fadeIn 1s 1.5s;
   animation-fill-mode: forwards;
 
   span {
-    font-size: 1.6rem;
+    font-size: 16px;
     display: block;
-    padding-top: 2rem;
+    padding-top: 20px;
     color: $primary-color;
   }
 }
 
 .map-wrap {
-  position: absolute;
-  right: 0;
+  float: right;
   width: 53%;
   height: 100%;
   overflow: hidden;
@@ -175,124 +170,5 @@
   .tooltip {
     font-size: 14px;
     font-weight: 600;
-  }
-}
-
-@media only screen and (max-width: 1550px) {
-  .contact-page .text-zone {
-    h1 {
-      font-size: 6.5rem;
-
-      &::before {
-        top: 0rem;
-      }
-
-      &::after {
-        bottom: -1.4rem;
-      }
-    }
-  }
-  .map-wrap {
-    width: 51%;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  .map-wrap {
-    width: 48%;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  .map-wrap {
-    width: 46%;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  .page-contact {
-    min-height: 1240px;
-  }
-
-  .contact-page .text-zone {
-    top: 33%;
-    width: 70%;
-
-    .paragraph-div {
-      &::before {
-        margin-top: -2rem;
-      }
-
-      &::after {
-        margin-top: -1.8rem;
-      }
-    }
-  }
-
-  .contact-form {
-    margin-top: 6rem;
-  }
-
-  .map-wrap {
-    position: static;
-    width: 85%;
-    height: 40rem;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 0px;
-    padding-left: 6rem;
-    padding-top: 77rem;
-    padding-bottom: 20px;
-  }
-
-  .info-map {
-    top: 78rem;
-    left: auto;
-    right: 5%;
-    width: 180px;
-    padding: 1.5rem;
-    font-size: 1.4rem;
-
-    span {
-      font-size: 1.3rem;
-      padding-top: 1rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .contact-page .text-zone {
-    left: 12.5rem;
-
-    h1 {
-      font-size: 4rem;
-
-      &::before {
-        top: -0.8rem;
-      }
-
-      &::after {
-        bottom: -1.6rem;
-      }
-    }
-
-    .paragraph-div {
-      p {
-        font-size: 1.4rem;
-      }
-
-      &::before {
-        margin-top: -2rem;
-      }
-
-      &::after {
-        margin-top: -1.6rem;
-      }
-    }
-  }
-
-  .contact-form {
-    margin-top: 5.75rem;
   }
 }

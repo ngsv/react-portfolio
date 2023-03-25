@@ -20,6 +20,10 @@
     font-family: $heading-font;
     font-weight: 400;
 
+    span {
+      text-align: center;
+    }
+
     // Space width (web developer)
     .__10 {
       width: 2.5rem;

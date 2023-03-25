@@ -243,7 +243,6 @@
     padding-right: 0px;
     padding-left: 6rem;
     padding-top: 77rem;
-    padding-bottom: 20px;
   }
 
   .info-map {
@@ -262,7 +261,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .page-contact {
+    min-height: 1350px;
+  }
+
   .contact-page .text-zone {
+    top: 34%;
     left: 12.5rem;
 
     h1 {
@@ -294,5 +298,25 @@
 
   .contact-form {
     margin-top: 5.75rem;
+
+    ul li.half {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  .map-wrap {
+    padding-top: 85rem;
+  }
+
+  .info-map {
+    top: 86.5rem;
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .contact-form {
+    width: 90%;
   }
 }

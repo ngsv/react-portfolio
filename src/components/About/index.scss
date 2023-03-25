@@ -258,6 +258,16 @@ $time-4: 200s;
   }
 
   .page-about {
-    min-height: 1100px;
+    min-height: 1050px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .about-page .text-zone {
+    top: 30%;
+  }
+
+  .stage-cube-cont {
+    top: 73%;
   }
 }

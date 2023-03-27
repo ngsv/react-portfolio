@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import App from './App';
 
 import './index.scss';
@@ -12,7 +13,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/react-portfolio">
+      <ScrollToTop />
       <App />
     </BrowserRouter>
   </React.StrictMode>

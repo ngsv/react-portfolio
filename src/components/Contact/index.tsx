@@ -46,9 +46,9 @@ const Contact = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
               idx={15}
-              cIdx={35}
+              cIdx={30}
             />
           </h1>
           <div className="paragraph-div">

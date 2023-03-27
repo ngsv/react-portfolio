@@ -31,38 +31,26 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={[
-                'M',
-                'e',
-                ',',
-                ' ',
-                'M',
-                'y',
-                's',
-                'e',
-                'l',
-                'f',
-                ' ',
-                '&',
-                ' ',
-                'I',
-              ]}
+              strArray={['W', 'h', 'o', ' ', 'A', 'm', ' ', 'I', '?']}
               idx={15}
               cIdx={21}
             />
           </h1>
           <div className="paragraph-div">
             <p>
-              Hello! I'm Steven, a mechanical engineer alumni from Toronto
+              Hi! I'm Steven, a mechanical engineer alumni from Toronto
               Metropolitan University. Before discovering my passion for
               programming, I worked in the manufacturing industry as an
               Engineering Associate. I decided to focalize my time and energy on
               programming, and thus, my self-learning journey began.
             </p>
             <p>
-              What I love about programming is the fast-paced environment and
-              the continuous learning process. Currently, I'm working on
-              upgrading my skills in React and TypeScript.
+              I love programming because it really excites me, it is fun to do.
+              As someone who enjoys puzzles and problem-solving, I am
+              particularly drawn to challenges that require logical thinking and
+              cognitive ability. I'm constantly learning new technologies, and
+              currently, I'm working on upgrading my skills in React and
+              TypeScript.
             </p>
             <p>
               Outside of programming, I love the outdoors. Some of my hobbies

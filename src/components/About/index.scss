@@ -197,11 +197,15 @@ $time-4: 200s;
       font-size: 1.5rem;
     }
   }
+
+  .stage-cube-cont {
+    width: 45%;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
   .page-about {
-    min-height: 900px;
+    min-height: 1000px;
   }
 
   .about-page .text-zone {
@@ -258,7 +262,7 @@ $time-4: 200s;
   }
 
   .page-about {
-    min-height: 1050px;
+    min-height: 1100px;
   }
 }
 

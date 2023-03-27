@@ -8,13 +8,12 @@
 }
 
 // Space character width in headings
-// Me, Myself & I: 24, 31, 33
-// Contact me: 42
+// Who Am I?: 24, 31, 33
+// Contact Me: 42
 h1 {
   .__24,
-  .__31,
-  .__33,
-  .__42 {
+  .__27,
+  .__37 {
     width: 2.5rem;
   }
 }
@@ -159,9 +158,8 @@ h1 {
 @media only screen and (max-width: 1550px) {
   h1 {
     .__24,
-    .__31,
-    .__33,
-    .__42 {
+    .__27,
+    .__37 {
       width: 1.6rem;
     }
   }
@@ -174,9 +172,8 @@ h1 {
 
   h1 {
     .__24,
-    .__31,
-    .__33,
-    .__42 {
+    .__27,
+    .__37 {
       width: 1.2rem;
     }
   }

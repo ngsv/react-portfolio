@@ -24,6 +24,7 @@ const ProjectsList = () => {
         title={project.title}
         description={project.description}
         technologies={project.technologies}
+        link={project.link}
       />
     );
   });

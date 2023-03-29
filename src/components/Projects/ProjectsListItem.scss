@@ -9,6 +9,11 @@
   color: $text-color;
   position: relative;
 
+  &:hover {
+    animation: pulse 1s;
+    cursor: pointer;
+  }
+
   img {
     width: 100%;
     height: auto;

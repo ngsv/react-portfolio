@@ -5,13 +5,18 @@ interface ProjectsListItemProps {
   title: string;
   description: string;
   technologies: string[];
+  link: string;
 }
 
+const handleClick = (link: string) => {
+  window.open(link, '_blank');
+};
+
 const ProjectsListItem = (props: ProjectsListItemProps) => {
-  const { img, title, description, technologies } = props;
+  const { img, title, description, technologies, link } = props;
 
   return (
-    <div className="project-card">
+    <div className="project-card" onClick={() => handleClick(link)}>
       <img src={img}></img>
       <h2>{title}</h2>
       <p>{description}</p>

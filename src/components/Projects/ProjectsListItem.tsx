@@ -8,12 +8,20 @@ interface ProjectsListItemProps {
 }
 
 const ProjectsListItem = (props: ProjectsListItemProps) => {
+  const { img, title, description, technologies } = props;
+
   return (
     <div className="project-card">
-      <img src={props.img}></img>
-      <h2>{props.title}</h2>
-      <p>{props.description}</p>
-      <div>{props.technologies}</div>
+      <img src={img}></img>
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <div className="technologies">
+        {technologies.map((technology, index) => (
+          <div key={index} className="technology-tag">
+            {technology}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

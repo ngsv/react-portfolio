@@ -6,15 +6,6 @@ import AnimatedLetters from '../AnimatedLetters';
 
 import './ProjectsList.scss';
 
-// interface ProjectsListItemProps {
-//   img: string;
-//   title: string;
-//   description: string;
-//   technologies: string[];
-// }
-
-// interface ProjectsListProps extends Array<ProjectsListItemProps> {}
-
 const ProjectsList = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
 
@@ -48,6 +39,9 @@ const ProjectsList = () => {
             cIdx={40}
           />
         </h1>
+        <div className="paragraph-div">
+          <p>Click on one of my projects to learn more!</p>
+        </div>
         <ul className="projects-list">{projectsListItems}</ul>
       </div>
     </>

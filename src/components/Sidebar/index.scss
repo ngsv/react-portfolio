@@ -85,6 +85,12 @@
       }
     }
 
+    a.projects-link {
+      &:after {
+        content: 'MY WORK';
+      }
+    }
+
     a.contact-link {
       &:after {
         content: 'CONTACT';

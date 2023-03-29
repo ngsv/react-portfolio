@@ -1,0 +1,35 @@
+.project-card {
+  height: 100%;
+  width: 90%;
+  background-color: #292929;
+  border-radius: 0.8rem;
+  color: white;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    // border-radius: 1.4rem;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+  }
+
+  h2,
+  p {
+    font-family: sans-serif;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+}

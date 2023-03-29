@@ -14,6 +14,9 @@ const Layout = () => {
             else if (location.pathname === '/about') {
                 setPageClass('page-about');
             }
+            else if (location.pathname === '/projects') {
+                setPageClass('page-projects');
+            }
             else if (location.pathname === '/contact') {
                 setPageClass('page-contact');
             }

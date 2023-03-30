@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faHome,
   faUser,
-  faCode,
+  faEye,
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -40,7 +40,7 @@ const Sidebar = () => {
             isActive ? 'active' : ''}`}
           to="/projects"
         >
-          <FontAwesomeIcon icon={faCode} color="4d4d4e" />
+          <FontAwesomeIcon icon={faEye} color="4d4d4e" />
         </NavLink>
         <NavLink
           className={`contact-link ${(isActive: Boolean) =>

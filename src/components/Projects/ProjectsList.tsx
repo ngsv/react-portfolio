@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Loader from 'react-loaders';
 
 import projects from '../../data/projects.js';
 import ProjectsListItem from './ProjectsListItem';
@@ -45,6 +46,7 @@ const ProjectsList = () => {
         </div>
         <ul className="projects-list">{projectsListItems}</ul>
       </div>
+      <Loader type="ball-scale-ripple-multiple" active />
     </>
   );
 };

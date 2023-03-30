@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
+import classnames from 'classnames';
 
 import Sidebar from '../Sidebar';
 
@@ -10,6 +11,7 @@ const Layout = () => {
   const [height, setHeight] = useState(0);
   const location = useLocation();
 
+  // Watches for route change
   useEffect(() => {
     const handleLocation = () => {
       if (location.pathname === '/') {
@@ -26,6 +28,7 @@ const Layout = () => {
     handleLocation();
   }, [location]);
 
+  // Watches for changes in projects list height - </body> tag on projects page
   useEffect(() => {
     const handleResize = () => {
       const projectsList = document.getElementsByClassName('projects-list')[0];
@@ -37,21 +40,21 @@ const Layout = () => {
           } else {
             setHeight(projectsList.scrollHeight + 350);
           }
-        }
-        if (projectsList) {
           clearInterval(waitForDivLoad);
         }
-      }, 100);
+      }, 50);
     };
 
     handleResize();
-
     window.addEventListener('resize', handleResize);
-
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [location]);
+
+  const bottomTagsClasses = classnames('tags', 'bottom-tags', {
+    show: pageClass === 'page-projects',
+  });
 
   const pageProjectStyles = {
     minHeight: `${height}px`,
@@ -68,7 +71,7 @@ const Layout = () => {
 
         <Outlet />
 
-        <span className="tags bottom-tags">
+        <span className={bottomTagsClasses}>
           &lt;/body&gt;
           <br />
         </span>

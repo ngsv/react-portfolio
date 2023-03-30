@@ -23,6 +23,12 @@
       text-align: center;
     }
 
+    .text-animate-hover {
+      &:hover {
+        color: $text-color;
+      }
+    }
+
     &::before {
       content: '<h1>';
       font-family: $tags-font;
@@ -97,6 +103,12 @@
   row-gap: 3rem;
 }
 
+@media only screen and (max-width: 1416px) {
+  .tags.bottom-tags.show {
+    animation: fadeOpacity 1s;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .projects-page {
     h1 {
@@ -118,12 +130,12 @@
 
       &::before {
         left: 10.5rem;
-        margin-top: -2rem;
+        margin-top: -1.8rem;
       }
 
       &::after {
         left: 10.5rem;
-        margin-top: -1.6rem;
+        margin-top: -0.4rem;
       }
 
       p {
@@ -134,5 +146,15 @@
     .projects-list {
       margin-left: 12.5rem;
     }
+  }
+}
+
+@keyframes fadeOpacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.6;
   }
 }

@@ -195,6 +195,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .page-home {
+    min-height: 900px;
+  }
   .home-page {
     .text-zone {
       left: 11rem;

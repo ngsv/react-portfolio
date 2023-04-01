@@ -30,21 +30,33 @@ const Layout = () => {
 
   // Watches for changes in projects list height - </body> tag on projects page
   useEffect(() => {
-    const handleResize = () => {
-      const projectsList = document.getElementsByClassName('projects-list')[0];
+    // const handleResize = () => {
+    //   const projectsList = document.getElementsByClassName('projects-list')[0];
 
-      const waitForDivLoad = setInterval(function () {
-        if (projectsList) {
-          setTimeout(() => {
-            if (window.innerWidth > 768) {
-              setHeight(projectsList.scrollHeight + 450);
-            } else {
-              setHeight(projectsList.scrollHeight + 350);
-            }
-            clearInterval(waitForDivLoad);
-          }, 50);
+    //   // const waitForDivLoad = setInterval(function () {
+    //   //   if (projectsList) {
+    //   //     setTimeout(() => {
+    //   //       if (window.innerWidth > 768) {
+    //   //         setHeight(projectsList.scrollHeight + 450);
+    //   //       } else {
+    //   //         setHeight(projectsList.scrollHeight + 350);
+    //   //       }
+    //   //       clearInterval(waitForDivLoad);
+    //   //     }, 75);
+    //   //   }
+    //   // }, 50);
+    // };
+
+    const handleResize = () => {
+      window.onload = function () {
+        const projectsList =
+          document.getElementsByClassName('projects-list')[0];
+        if (window.innerWidth > 768) {
+          setHeight(projectsList.scrollHeight + 450);
+        } else {
+          setHeight(projectsList.scrollHeight + 350);
         }
-      }, 50);
+      };
     };
 
     handleResize();

@@ -105,7 +105,8 @@
 
 @media only screen and (max-width: 1416px) {
   .tags.bottom-tags.show {
-    animation: fadeOpacity 1s;
+    opacity: 0;
+    animation: fadeOpacity 1s 1s forwards;
   }
 }
 
@@ -145,7 +146,7 @@
 
     .projects-list {
       margin-left: 11rem;
-      margin-right: 4.5rem;
+      margin-right: 5.5rem;
     }
   }
 }

@@ -32,13 +32,15 @@ const Layout = () => {
             const projectsList = document.getElementsByClassName('projects-list')[0];
             const waitForDivLoad = setInterval(function () {
                 if (projectsList) {
-                    if (window.innerWidth > 768) {
-                        setHeight(projectsList.scrollHeight + 450);
-                    }
-                    else {
-                        setHeight(projectsList.scrollHeight + 350);
-                    }
-                    clearInterval(waitForDivLoad);
+                    setTimeout(() => {
+                        if (window.innerWidth > 768) {
+                            setHeight(projectsList.scrollHeight + 450);
+                        }
+                        else {
+                            setHeight(projectsList.scrollHeight + 350);
+                        }
+                        clearInterval(waitForDivLoad);
+                    }, 50);
                 }
             }, 50);
         };

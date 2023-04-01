@@ -51,7 +51,7 @@
       position: absolute;
       margin-top: 3rem;
       margin-left: 2rem;
-      animation: fadeIn 1s 1.7s backwards;
+      animation: fadeOpacity 1s 1.7s backwards;
     }
 
     // 'S' Logo in heading (Steven)
@@ -123,6 +123,17 @@
   }
 }
 
+// ------------------------ Keyframes ------------------------
+@keyframes fadeOpacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.6;
+  }
+}
+
 // ------------------------ Media queries ------------------------
 @media only screen and (max-width: 1700px) {
   .home-page {
@@ -186,7 +197,7 @@
 @media only screen and (max-width: 768px) {
   .home-page {
     .text-zone {
-      left: 12.5rem;
+      left: 11rem;
     }
     h1 {
       font-size: 3rem;

@@ -1,16 +1,17 @@
 import { Link, NavLink } from 'react-router-dom';
-
-import LogoS from '../../assets/images/logo-s.png';
-import LogoSubtitle from '../../assets/images/logo_steven.png';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faHome,
   faUser,
   faEye,
   faEnvelope,
+  faAddressCard,
 } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+import LogoS from '../../assets/images/logo-s.png';
+import LogoSubtitle from '../../assets/images/logo_steven.png';
+import Resume from '../../assets/Ngov_Steven-Resume.pdf';
 
 import './index.scss';
 
@@ -63,6 +64,16 @@ const Sidebar = () => {
             href="https://linkedin.com/in/ngov-steven"
           >
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            type="application/pdf"
+            href={Resume}
+          >
+            <FontAwesomeIcon icon={faAddressCard} color="#4d4d4e" />
           </a>
         </li>
       </ul>

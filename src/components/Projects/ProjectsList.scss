@@ -113,7 +113,7 @@
   .projects-page {
     h1 {
       font-size: 3rem;
-      margin-left: 12.5rem;
+      margin-left: 11rem;
 
       &::before {
         top: -1.2rem;
@@ -125,16 +125,16 @@
     }
 
     .paragraph-div {
-      margin-left: 12.5rem;
+      margin-left: 11rem;
       margin-top: 3.2rem;
 
       &::before {
-        left: 10.5rem;
+        left: 9rem;
         margin-top: -1.8rem;
       }
 
       &::after {
-        left: 10.5rem;
+        left: 9rem;
         margin-top: -0.4rem;
       }
 
@@ -144,7 +144,8 @@
     }
 
     .projects-list {
-      margin-left: 12.5rem;
+      margin-left: 11rem;
+      margin-right: 4.5rem;
     }
   }
 }

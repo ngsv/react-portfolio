@@ -40,7 +40,7 @@ const Layout = () => {
                             setHeight(projectsList.scrollHeight + 350);
                         }
                         clearInterval(waitForDivLoad);
-                    }, 50);
+                    }, 200);
                 }
             }, 50);
         };

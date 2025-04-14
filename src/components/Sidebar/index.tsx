@@ -11,7 +11,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import LogoS from '../../assets/images/logo-s.png';
 import LogoSubtitle from '../../assets/images/logo_steven.png';
-import Resume from '../../assets/Ngov_Steven-Resume.pdf';
+// import Resume from '../../assets/Ngov_Steven-Resume.pdf';
 
 import './index.scss';
 
@@ -66,7 +66,7 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             target="_blank"
             rel="noreferrer"
@@ -75,7 +75,7 @@ const Sidebar = () => {
           >
             <FontAwesomeIcon icon={faAddressCard} color="#4d4d4e" />
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
